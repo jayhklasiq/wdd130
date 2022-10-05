@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background-color: pink;
+    margin: 10% auto;
+    width: 30%;
+}
+
+header{
+    color: white;
+}
+
+header:hover{
+    color: black;
+}
+
+main {
+    margin: 30px auto;
+    color: white;
+}
+div{
+    margin: 30px auto;
+    color: white;
+    font-weight: bold;
+}
+
+section p{
+    margin: 30px left;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+img{
+    width: 50%;
+}
+
+h2{
+    margin: 0px auto;
+    font-size: 4.5em;
+}
