@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Noto+Sans+Georgian:wght@200&display=swap');
+
 body div{
     max-width: 1600px;
 }
@@ -7,6 +9,7 @@ body div{
     text-align: center;
     color: black;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg{
     text-align: center;
@@ -17,12 +20,18 @@ body div{
 #background{
     height: 725px;
     background-color: #90e0ef;
+    margin-bottom: 50px;
 }
+
 body{
     background-color: whitesmoke;
+    font-family: 'Noto Sans Georgian', Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 header{
-    background-color: skyblue;
+    background-color: #a7bdff;
 }
 nav a:hover{
     background-color: #dffbfe;
@@ -32,45 +41,73 @@ nav a:hover{
     background-color: skyblue;
     color: #396E94;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
-    background-color: #a7bdff;
+    background-color: #0f329b;
     color: #396E94;
-}
-.msg{
-    background-color: whitesmoke;
 }
 .logo{
     width: 80px;
 }
+#logo_link{
+    padding-top: 5px;
+}
 main section{
     text-align: center;
 }
+main section img{
+    box-sizing: border-box;
+}
+.card-img{
+    border: 10px solid #0f329b;
+}
+.river-cards, .camping-cards, .rapids-cards{
+    margin: 200px 0;
+}
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 .home-title{
-    color: #396E94;;
+    color: #396E94;
+    font-family: 'Arima', 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 2em;
+    margin-top: 10px;
 }
 #hero-img{
     width: 100%;
+}
+h2{
+    margin: 0;
 }
 h4{
     text-align: center;
     color: #396E94;
 }
+.msg{
+    background-color: skyblue;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 100px;
+}
 .msg h2{
     color: #396E94;
+    font-family: 'Arima', 'Trebuchet MS', 'Lucida Sans Unicode';
 }
 .msg p{
     color: #396E94;
-}
-footer h3{
-    color: #396E94;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer{
     background-color: skyblue;
     color: #396E94;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     color: #396E94;
@@ -80,8 +117,14 @@ footer a:hover{
     background-color: black;
     color: #396E94;
 }
+footer h3{
+    color: #396E94;
+}
 footer p{
     font-size: 1.2em;
+}
+footer .social img{
+    padding-top: 15px;
 }
 footer p a:hover{
     text-decoration: underline;
