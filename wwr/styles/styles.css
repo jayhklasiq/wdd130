@@ -1,28 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Noto+Sans+Georgian:wght@200&display=swap');
 
-body div{
-    max-width: 1600px;
-}
-#content {
-    margin: 0 auto;
-}nav a{
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    padding: 35px;
-}
-#hero-msg h1, #hero-msg{
-    text-align: center;
-} 
-.button-box{
-    text-align: center;
-}
-#background{
-    height: 725px;
-    background-color: #90e0ef;
-    margin-bottom: 50px;
-}
-
 body{
     background-color: whitesmoke;
     font-family: 'Noto Sans Georgian', Helvetica, sans-serif;
@@ -30,13 +7,100 @@ body{
     padding: 0;
     margin: 0;
 }
+body div{
+    max-width: 1600px;
+}
+#content {
+    margin: 0 auto;
+}
+
 header{
     background-color: #a7bdff;
+    display:grid;
+    grid-template-columns: 150px auto;
+}
+.logo{
+    width: 80px;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 35px;
 }
 nav a:hover{
     background-color: #dffbfe;
     color: #396E94;
 }
+
+#hero{
+    margin-top: -100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg{
+    margin-top: 100px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#hero-msg h1, #hero-msg{
+    text-align: center;
+} 
+#hero-msg h4{
+    color: white;
+}
+.home-title{
+    color: white;
+    font-family: 'Arima', 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 2em;
+    margin-top: 10px;
+}
+.button-box{
+    text-align: center;
+}
+#hero-img{
+    width: 100%;
+}
+#hero-box img{
+    width: 100%;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+h4{
+    text-align: center;
+    color: #396E94;
+}
+
+h2{
+    margin: 0;
+}
+
+main section{
+    text-align: center;
+}
+main section img{
+    box-sizing: border-box;
+}
+
 .book, .join{
     background-color: skyblue;
     color: #396E94;
@@ -50,49 +114,45 @@ nav a:hover{
     background-color: #0f329b;
     color: #396E94;
 }
-.logo{
-    width: 80px;
-}
-#logo_link{
-    padding-top: 5px;
-}
-main section{
-    text-align: center;
-}
-main section img{
-    box-sizing: border-box;
-}
+
 .card-img{
     border: 10px solid #0f329b;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #757a65;
 }
-.river-cards, .camping-cards, .rapids-cards{
+.card-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+.river-cards {
     margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.rapids-cards{
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.camping-cards {
+    margin: 200px 0;
+    grid-column: 5/7;
+    grid-row: 2/3;
 }
 .icon{
     width: 80px;
     padding-top: 10px;
 }
-.home-title{
-    color: #396E94;
-    font-family: 'Arima', 'Trebuchet MS', 'Lucida Sans Unicode';
-    font-size: 2em;
-    margin-top: 10px;
-}
-#hero-img{
-    width: 100%;
-}
-h2{
-    margin: 0;
-}
-h4{
-    text-align: center;
-    color: #396E94;
-}
+
 .msg{
     background-color: skyblue;
     line-height: 1.5em;
     padding: 35px;
     margin-top: 100px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #757a65;
 }
 .msg h2{
     color: #396E94;
@@ -103,11 +163,32 @@ h4{
     font-size: .8em;
     padding-bottom: 15px;
 }
+
+
+#background{
+    height: 725px;
+    background-color: #90e0ef;
+    margin-bottom: 50px;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+.mountains{
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #757a65;
+}
+
+
 footer{
     background-color: skyblue;
     color: #396E94;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer a{
     color: #396E94;
@@ -128,4 +209,46 @@ footer .social img{
 }
 footer p a:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
