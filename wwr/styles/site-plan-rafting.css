@@ -149,10 +149,6 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
 .left {
   grid-area: left;
   border-top: 1px solid;
@@ -162,4 +158,8 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
 }
