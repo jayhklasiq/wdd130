@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+h3{
+    color: rgb(62, 62, 165);
+}
+#overflow_text{
+    overflow: scroll;
+}
+.footers{
+    background-color: rgb(62, 62, 165);
+    color:beige;
+    align-items: center;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
