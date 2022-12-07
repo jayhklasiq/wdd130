@@ -170,3 +170,13 @@ footer a{
 .slideshow{
   text-align: center;
 }
+
+/* css for stores page */
+h5{
+  font-family: 'Libre Bodoni', Verdana, Tahoma, sans-serif;
+}
+.maps{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
